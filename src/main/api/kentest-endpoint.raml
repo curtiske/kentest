@@ -1,0 +1,16 @@
+#%RAML 1.0
+title: D365 Queries and Updates
+description: System layer for CRUD actions in Dynamics 365
+mediaType: application/json
+baseUri: http://0.0.0.0:8081/api
+/v1:
+  /test:
+    get:
+      description: Test get call
+      headers:
+        testHeader:
+          required: false
+      responses:
+        200:
+          body:
+            application/json: 
